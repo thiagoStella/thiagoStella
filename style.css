@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+} 
+
+header {
+    display: flex;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: linear-gradient(
+        to bottom left,        
+        rgba(123, 196, 167, 0.8),
+        rgba(20, 68, 135, 0.9)
+      ),  
+      url(Imagens/tecnologia-de-internet-em-nuvem_53876-94170.png);
+}
+header .foto {
+    width: 50%;
+    margin-top: 15rem;
+    margin-left: 15rem;
+    border-radius: 50%;
+}   
+header .foto img {
+    border-radius: 50%;
+    border: 1px solid black;
+}
+header .nome {   
+    color: white; 
+    width: 50%;    
+    margin-top: 15rem;
+    margin-right: 15rem;
+    text-align: center;    
+}
+.nome h1 {
+    font-size: 3.5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem #000000;
+    animation: entradaCima 0.5s ease-out;
+}
+.nome h2 {
+    font-size: 1.7rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem #000000;
+    animation: aparecer 3s ease-out;
+}
+
+.quem-sou {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 4rem;
+}
+.quem-sou-eu {
+    display: flex;
+    margin-top: 3rem;    
+    font-size: 1.5rem;
+    text-align: justify;
+    gap: 5rem;
+    /*background-color: #955cfedb;*/
+}
+.quem-sou-eu h2 {
+    text-align: center;
+}
+.habilidades h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 4rem;
+}
+
+.habilidades {
+    background-color: rgb(1,130,231);
+background: linear-gradient(180deg,rgba(255,255,255,1)0%, rgba(1,130,231,1) 25%,  rgba(1,130,231,1) 75%,rgba(255,255,255,1) 100%);
+    
+}
+
+.html , .css, .js , .apex{
+    display: flex;
+    height: 40vh;
+    width: 50%;
+    padding: 4rem;
+    margin: auto;
+    
+}
+
+.texto {
+    font-size: 2rem;
+    padding: 1rem;
+    width: 300px;
+    height: 200px;
+}
+li {    
+    list-style-type: none;
+}
+
+.logo img {
+    width: 200px;
+    height: 200px;
+}
+footer {
+    background: linear-gradient(rgba(255,255,255,1)0%, rgba(1,130,231,1) 100%)
+}
+
+.chamar {
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.contatos ul {
+    
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6rem;
+    gap: 3rem;
+}
+.icone {
+    
+    height: 3rem;
+    width: 3rem;
+}
+
+@media screen and (max-width: 700px) {
+    
+    header .foto {        
+        margin-top: 8rem;
+        margin-left: 7rem;
+        scale: 0.5;
+    }
+    header .nome {
+        scale: 0.7;
+        margin-right: 0rem;        
+    }
+    .quem-sou-eu {
+        flex-direction: column;
+    }
+    .html , .css, .js , .apex{
+        display: flex;
+        height: 40vh;
+        width: 50%;
+        padding: 4rem;
+        margin: auto;
+        
+    }
+    .chamar {
+        margin-top: 20vh;
+
+    }
+}
